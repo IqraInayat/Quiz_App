@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+<style>
+    .maincontainer
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    h1
+    {
+        margin: 20px;
+        text-align: center;
+        color:orange;
+        font-family: cursive;
+        text-shadow: 4px 4px rgba(255, 166, 0, 0.342) ;
+    }
+    #quescontainer
+    {
+        width: 50vw;
+        background: rgba(0, 0, 0, 0.575);
+        border-radius: 10px;
+        height: 200px;
+        margin: auto;
+        text-align: center;
+        padding: 30px;
+        box-shadow: 7px 7px  rgba(0, 0, 0, 0.226);
+        color: white;
+    }
+    .options
+    {
+        margin-bottom: 5px;
+    }
+    #mybtn
+    {
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border-radius: 8px;
+        font-size: 17px;
+        font-weight: 500;
+        color: #ffffff;
+        text-shadow: none;
+        background: transparent;
+        box-shadow: transparent;
+        border: 2px solid #fffffffc;
+        transition: 0.5s ease;
+        user-select: none;
+        width: 40%;
+    }
+    #mybtn:hover,:focus 
+    {
+        color: #ffffff;
+        background: orange;
+        border-radius: 20px;
+        transform: scale(1.1);
+        border: 1px solid rgba(255, 166, 0, 0.712);
+        text-shadow: 0 0 5px #ffffff,0 0 10px #ffffff,0 0 20px #ffffff;
+        box-shadow: 0 0 5px orange,0 0 20px orange,0 0 50px orange,0 0 50px orange;
+    }
+    .maindiv
+    {
+        display: flex;
+    }
+    #answercheck
+    {
+        width: 20vw;
+        height: 90vh;
+        background-color: rgba(95, 158, 160, 0.637);
+    }
+    #ultag
+    {
+        list-style: none;
+    }
+    .correctdata
+    {
+        width: 15vw;
+        height: 5vh;
+        border: 1px solid green;
+        background: green;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        padding-top: 5px;
+    }
+    #wrongdata
+    {
+        width: 15vw;
+        height: 5vh;
+        border: 1px solid red;
+        background: red;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        padding-top: 5px;
+        font-weight: 800;
+}
+    
+</style>
+<body>
+    
+        
+    <!-- <h1>MY QUIZ APP</h1> -->
+    <div class="maindiv">
+        <div id="quescontainer"></div>
+        <div id="answercheck"></div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
